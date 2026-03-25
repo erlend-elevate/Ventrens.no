@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personvernpolicy | VentRens Bergen</title>
+    <meta name="description" content="Les om hvordan VentRens Bergen behandler dine personopplysninger i henhold til GDPR.">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1C3144;
+            --primary-light: #2A4A66;
+            --accent: #2B7A6F;
+            --accent-hover: #236358;
+            --accent-subtle: #E8F4F2;
+            --bg: #FAFAF8;
+            --bg-section: #F3F1EE;
+            --white: #FFFFFF;
+            --text: #1A1A2E;
+            --text-secondary: #5A6270;
+            --border: #DDD8D0;
+        }
+
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            color: var(--text);
+            background-color: var(--bg);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        h1, h2 {
+            font-family: 'DM Serif Display', serif;
+            font-weight: 400;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: var(--accent-hover);
+        }
+
+        /* NAV */
+        .nav {
+            background: var(--white);
+            border-bottom: 1px solid var(--border);
+            padding: 1rem 1.5rem;
+        }
+
+        .nav-inner {
+            max-width: 1080px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-logo {
+            font-family: 'DM Serif Display', serif;
+            font-size: 1.35rem;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .nav-logo span {
+            color: var(--accent);
+        }
+
+        /* CONTENT */
+        .content {
+            flex: 1;
+            max-width: 1080px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem 4rem;
+            width: 100%;
+        }
+
+        .content h1 {
+            font-size: 2.2rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .updated {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-bottom: 2.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .content h2 {
+            font-size: 1.4rem;
+            color: var(--primary);
+            margin-top: 2.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .content p,
+        .content ul {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+            line-height: 1.75;
+        }
+
+        .content ul {
+            padding-left: 1.5rem;
+        }
+
+        .content ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .content strong {
+            color: var(--text);
+            font-weight: 600;
+        }
+
+        /* FOOTER */
+        .footer {
+            background: var(--primary);
+            color: rgba(255,255,255,0.7);
+            padding: 2.5rem 1.5rem;
+            font-size: 0.9rem;
+        }
+
+        .footer-inner {
+            max-width: 1080px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .footer-logo {
+            font-family: 'DM Serif Display', serif;
+            font-size: 1.15rem;
+            color: var(--white);
+        }
+
+        .footer-logo span {
+            color: var(--accent);
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color 0.2s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--white);
+        }
+
+        .footer-copy {
+            width: 100%;
+            text-align: center;
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 600px) {
+            .content h1 {
+                font-size: 1.6rem;
+            }
+            .content h2 {
+                font-size: 1.2rem;
+            }
+            .footer-inner {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">Vent<span>Rens</span> Bergen</a>
+        </div>
+    </nav>
+
+    <!-- CONTENT -->
+    <main class="content">
+        <h1>Personvernpolicy</h1>
+        <p class="updated">Sist oppdatert: 24. mars 2026</p>
+
+        <h2>1. Hvem vi er</h2>
+        <p>VentRens Bergen er en formidlingstjeneste som kobler boligeiere i Bergen-området med kvalitetssjekkede ventilasjonsrens-firmaer. Vi er behandlingsansvarlig for personopplysningene som samles inn gjennom våre nettsider og skjemaer.</p>
+        <p><strong>Kontakt:</strong> <a href="mailto:kontakt@ventrensberg.no">kontakt@ventrensberg.no</a></p>
+
+        <h2>2. Hvilke opplysninger vi samler inn</h2>
+        <p>Når du fyller ut vårt forespørselskjema, samler vi inn følgende opplysninger:</p>
+        <ul>
+            <li>Navn</li>
+            <li>E-postadresse</li>
+            <li>Telefonnummer</li>
+            <li>Adresse/postnummer</li>
+            <li>Opplysninger om bolig og ventilasjonsbehov (f.eks. type bolig, antall ventiler, ønsket tidspunkt)</li>
+        </ul>
+
+        <h2>3. Hvorfor vi samler inn opplysninger (rettslig grunnlag)</h2>
+        <p>Vi behandler personopplysningene dine basert på følgende rettslige grunnlag:</p>
+        <ul>
+            <li><strong>Samtykke (GDPR art. 6(1)(a)):</strong> Du gir aktivt samtykke ved å fylle ut og sende inn forespørselskjemaet.</li>
+            <li><strong>Berettiget interesse (GDPR art. 6(1)(f)):</strong> Vi har en berettiget interesse i å formidle forespørsler til relevante tjenesteytere for å kunne levere tjenesten vår.</li>
+        </ul>
+
+        <h2>4. Typeform som databehandler</h2>
+        <p>Vi bruker Typeform som verktøy for innsamling av skjemadata. Typeform opptrer som databehandler på våre vegne og behandler opplysningene dine i henhold til en databehandleravtale. Typeform lagrer data på servere innenfor EU/EØS. Du kan lese mer om Typeforms personvern på <a href="https://www.typeform.com/privacy-policy/" target="_blank" rel="noopener">typeform.com/privacy-policy</a>.</p>
+
+        <h2>5. Deling med ventilasjonsrens-firmaer</h2>
+        <p>Når du sender inn en forespørsel, deler vi opplysningene dine med inntil 3 kvalitetssjekkede ventilasjonsrens-firmaer i Bergen-området. Disse firmaene mottar kun de opplysningene som er nødvendige for å kunne gi deg et tilbud. Firmaene er selv behandlingsansvarlige for den videre behandlingen av dine opplysninger.</p>
+
+        <h2>6. Informasjonskapsler og analyse</h2>
+        <p>Vår nettside kan bruke følgende informasjonskapsler og analyseverktøy:</p>
+        <ul>
+            <li><strong>Google Analytics 4:</strong> For å forstå hvordan besøkende bruker nettsiden vår. IP-adresser anonymiseres.</li>
+            <li><strong>Meta Pixel:</strong> For å måle effekten av annonsering på Facebook og Instagram.</li>
+            <li><strong>Nødvendige informasjonskapsler:</strong> For grunnleggende funksjonalitet på nettsiden.</li>
+        </ul>
+        <p>Du kan administrere informasjonskapsler i nettleserens innstillinger.</p>
+
+        <h2>7. Dine rettigheter</h2>
+        <p>I henhold til GDPR har du følgende rettigheter:</p>
+        <ul>
+            <li><strong>Rett til innsyn:</strong> Du kan be om å se hvilke opplysninger vi har om deg.</li>
+            <li><strong>Rett til retting:</strong> Du kan be om at feilaktige opplysninger rettes.</li>
+            <li><strong>Rett til sletting:</strong> Du kan be om at opplysningene dine slettes.</li>
+            <li><strong>Rett til begrensning:</strong> Du kan be om at behandlingen begrenses.</li>
+            <li><strong>Rett til dataportabilitet:</strong> Du kan be om å motta dine opplysninger i et strukturert, maskinlesbart format.</li>
+            <li><strong>Rett til å trekke samtykke:</strong> Du kan når som helst trekke tilbake samtykket ditt.</li>
+            <li><strong>Klagerett:</strong> Du har rett til å klage til Datatilsynet (<a href="https://www.datatilsynet.no" target="_blank" rel="noopener">datatilsynet.no</a>).</li>
+        </ul>
+        <p>For å utøve dine rettigheter, kontakt oss på <a href="mailto:kontakt@ventrensberg.no">kontakt@ventrensberg.no</a>.</p>
+
+        <h2>8. Lagring og sletting</h2>
+        <p>Vi lagrer personopplysningene dine kun så lenge det er nødvendig for formålet de ble samlet inn for. Forespørsler og tilhørende data slettes automatisk etter 12 måneder, med mindre du ber om sletting tidligere.</p>
+
+        <h2>9. Endringer i personvernpolicyen</h2>
+        <p>Vi kan oppdatere denne personvernpolicyen fra tid til annen. Vesentlige endringer vil bli kommunisert på vår nettside. Vi anbefaler at du jevnlig sjekker denne siden for oppdateringer.</p>
+
+        <h2>10. Kontakt oss</h2>
+        <p>Har du spørsmål om vår behandling av personopplysninger? Ta kontakt med oss:</p>
+        <p><strong>VentRens Bergen</strong><br>
+        E-post: <a href="mailto:kontakt@ventrensberg.no">kontakt@ventrensberg.no</a></p>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-logo">Vent<span>Rens</span> Bergen</div>
+            <div class="footer-links">
+                <a href="personvern.html">Personvern</a>
+                <a href="vilkar.html">Vilkår</a>
+                <a href="kontakt.html">Kontakt</a>
+            </div>
+            <div class="footer-copy">&copy; 2026 VentRens Bergen. Alle rettigheter reservert.</div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventilasjonsrens i Bergen | Sammenlign tilbud gratis | VentRens Bergen</title>
+    <meta name="description" content="Få opptil 3 uforpliktende tilbud på ventilasjonsrens i Bergen. Vi kobler deg med kvalitetssjekkede firmaer – raskt, enkelt og helt gratis.">
+    <link rel="canonical" href="https://ventrensberg.no/">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+    <!-- Google Analytics 4 – Placeholder
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    -->
+
+    <!-- Meta Pixel – Placeholder
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', 'XXXXXXXXXXXXXXX');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=XXXXXXXXXXXXXXX&ev=PageView&noscript=1"/>
+    </noscript>
+    -->
+
+    <style>
+        :root {
+            --primary: #1C3144;
+            --primary-light: #2A4A66;
+            --accent: #2B7A6F;
+            --accent-hover: #236358;
+            --accent-subtle: #E8F4F2;
+            --bg: #FAFAF8;
+            --bg-section: #F3F1EE;
+            --white: #FFFFFF;
+            --text: #1A1A2E;
+            --text-secondary: #5A6270;
+            --border: #DDD8D0;
+        }
+
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            color: var(--text);
+            background-color: var(--bg);
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            font-family: 'DM Serif Display', serif;
+            font-weight: 400;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: var(--accent-hover);
+        }
+
+        .container {
+            max-width: 1080px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* NAV */
+        .nav {
+            background: var(--white);
+            border-bottom: 1px solid var(--border);
+            padding: 1rem 1.5rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-inner {
+            max-width: 1080px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav-logo {
+            font-family: 'DM Serif Display', serif;
+            font-size: 1.35rem;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .nav-logo span {
+            color: var(--accent);
+        }
+
+        .nav-cta {
+            display: inline-block;
+            background: var(--accent);
+            color: var(--white);
+            padding: 0.55rem 1.4rem;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: background 0.2s ease;
+        }
+
+        .nav-cta:hover {
+            background: var(--accent-hover);
+            color: var(--white);
+        }
+
+        /* HERO */
+        .hero {
+            padding: 5rem 1.5rem 4rem;
+            text-align: center;
+        }
+
+        .hero-inner {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: var(--accent-subtle);
+            color: var(--accent);
+            font-size: 0.85rem;
+            font-weight: 600;
+            padding: 0.4rem 1rem;
+            border-radius: 50px;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            color: var(--primary);
+            line-height: 1.2;
+            margin-bottom: 1.25rem;
+        }
+
+        .hero h1 em {
+            color: var(--accent);
+            font-style: normal;
+        }
+
+        .hero .subtitle {
+            font-size: 1.15rem;
+            color: var(--text-secondary);
+            line-height: 1.75;
+            margin-bottom: 2.5rem;
+            max-width: 580px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            background: var(--accent);
+            color: var(--white);
+            padding: 1rem 2.5rem;
+            border-radius: 8px;
+            font-size: 1.05rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: background 0.2s ease, transform 0.15s ease;
+        }
+
+        .btn-primary:hover {
+            background: var(--accent-hover);
+            color: var(--white);
+            transform: translateY(-1px);
+        }
+
+        .hero-trust {
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .hero-trust svg {
+            vertical-align: middle;
+            margin-right: 0.25rem;
+        }
+
+        /* HOW IT WORKS */
+        .how-it-works {
+            background: var(--bg-section);
+            padding: 5rem 1.5rem;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-header h2 {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .section-header p {
+            font-size: 1.05rem;
+            color: var(--text-secondary);
+        }
+
+        .steps {
+            max-width: 1080px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .step {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .step-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            background: var(--accent-subtle);
+            color: var(--accent);
+            border-radius: 50%;
+            font-family: 'DM Mono', monospace;
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin-bottom: 1.25rem;
+        }
+
+        .step h3 {
+            font-size: 1.2rem;
+            color: var(--primary);
+            margin-bottom: 0.6rem;
+        }
+
+        .step p {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        /* BENEFITS */
+        .benefits {
+            padding: 5rem 1.5rem;
+        }
+
+        .benefits-grid {
+            max-width: 1080px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+
+        .benefit {
+            display: flex;
+            gap: 1rem;
+            padding: 1.5rem;
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+        }
+
+        .benefit-icon {
+            flex-shrink: 0;
+            width: 44px;
+            height: 44px;
+            background: var(--accent-subtle);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .benefit-icon svg {
+            width: 22px;
+            height: 22px;
+            stroke: var(--accent);
+            fill: none;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .benefit h3 {
+            font-size: 1.05rem;
+            color: var(--primary);
+            margin-bottom: 0.3rem;
+        }
+
+        .benefit p {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            line-height: 1.65;
+        }
+
+        /* ABOUT SECTION */
+        .about {
+            background: var(--bg-section);
+            padding: 5rem 1.5rem;
+        }
+
+        .about-inner {
+            max-width: 720px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .about p {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        /* FORM SECTION */
+        .form-section {
+            padding: 5rem 1.5rem;
+        }
+
+        .form-wrapper {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        .form-section .section-header {
+            margin-bottom: 2rem;
+        }
+
+        .typeform-container {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            overflow: hidden;
+            min-height: 500px;
+        }
+
+        .typeform-container iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+        }
+
+        .typeform-fallback {
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .typeform-fallback p {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+        }
+
+        /* FAQ */
+        .faq {
+            background: var(--bg-section);
+            padding: 5rem 1.5rem;
+        }
+
+        .faq-list {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            margin-bottom: 0.75rem;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.25rem 1.5rem;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--primary);
+            text-align: left;
+            gap: 1rem;
+        }
+
+        .faq-question:hover {
+            background: var(--accent-subtle);
+        }
+
+        .faq-question svg {
+            flex-shrink: 0;
+            width: 20px;
+            height: 20px;
+            stroke: var(--accent);
+            fill: none;
+            stroke-width: 2;
+            transition: transform 0.2s ease;
+        }
+
+        .faq-item.open .faq-question svg {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .faq-answer-inner {
+            padding: 0 1.5rem 1.25rem;
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            line-height: 1.75;
+        }
+
+        /* CTA BANNER */
+        .cta-banner {
+            padding: 4rem 1.5rem;
+            text-align: center;
+        }
+
+        .cta-banner-inner {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .cta-banner h2 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 0.75rem;
+        }
+
+        .cta-banner p {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+        }
+
+        /* FOOTER */
+        .footer {
+            background: var(--primary);
+            color: rgba(255,255,255,0.7);
+            padding: 2.5rem 1.5rem;
+            font-size: 0.9rem;
+        }
+
+        .footer-inner {
+            max-width: 1080px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .footer-logo {
+            font-family: 'DM Serif Display', serif;
+            font-size: 1.15rem;
+            color: var(--white);
+        }
+
+        .footer-logo span {
+            color: var(--accent);
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color 0.2s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--white);
+        }
+
+        .footer-copy {
+            width: 100%;
+            text-align: center;
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.8rem;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .hero {
+                padding: 3.5rem 1.5rem 3rem;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .steps {
+                grid-template-columns: 1fr;
+                max-width: 400px;
+            }
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+            .nav-cta {
+                padding: 0.45rem 1rem;
+                font-size: 0.85rem;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .footer-inner {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">Vent<span>Rens</span> Bergen</a>
+            <a href="#skjema" class="nav-cta">Gratis tilbud</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-inner">
+            <div class="hero-badge">Gratis og uforpliktende</div>
+            <h1>Trenger du <em>ventilasjonsrens</em> i Bergen?</h1>
+            <p class="subtitle">Fyll ut ett enkelt skjema og motta opptil 3 tilbud fra kvalitetssjekkede firmaer. Helt gratis, helt uforpliktende.</p>
+            <a href="#skjema" class="btn-primary">Sammenlign tilbud nå</a>
+            <p class="hero-trust">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.3 4L6 11.3 2.7 8" stroke="#2B7A6F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Ingen kostnad &nbsp;&middot;&nbsp; Ingen forpliktelser &nbsp;&middot;&nbsp; Svar innen 24 timer
+            </p>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="how-it-works">
+        <div class="section-header">
+            <h2>Slik fungerer det</h2>
+            <p>Tre enkle steg til renere ventilasjon</p>
+        </div>
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Fyll ut skjemaet</h3>
+                <p>Fortell oss litt om boligen din og hva du trenger. Det tar under 2 minutter.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Motta tilbud</h3>
+                <p>Opptil 3 kvalitetssjekkede firmaer kontakter deg med sine beste tilbud innen 24 timer.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Velg det beste</h3>
+                <p>Sammenlign pris og tjenester, og velg firmaet som passer deg best. Helt uforpliktende.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- BENEFITS -->
+    <section class="benefits">
+        <div class="section-header">
+            <h2>Hvorfor bruke VentRens Bergen?</h2>
+        </div>
+        <div class="benefits-grid">
+            <div class="benefit">
+                <div class="benefit-icon">
+                    <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <div>
+                    <h3>Kvalitetssjekkede firmaer</h3>
+                    <p>Vi samarbeider kun med seriøse, erfarne ventilasjonsrens-firmaer i Bergen-området.</p>
+                </div>
+            </div>
+            <div class="benefit">
+                <div class="benefit-icon">
+                    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                </div>
+                <div>
+                    <h3>Spar tid</h3>
+                    <p>Slippe ringe rundt og sammenligne selv. Vi gjør jobben for deg med ett skjema.</p>
+                </div>
+            </div>
+            <div class="benefit">
+                <div class="benefit-icon">
+                    <svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                </div>
+                <div>
+                    <h3>100 % gratis</h3>
+                    <p>Tjenesten er helt gratis for deg. Du betaler ingenting for tilbudene du mottar.</p>
+                </div>
+            </div>
+            <div class="benefit">
+                <div class="benefit-icon">
+                    <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                </div>
+                <div>
+                    <h3>Ingen forpliktelser</h3>
+                    <p>Du velger selv om du vil takke ja til noen av tilbudene. Ingen bindinger.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about">
+        <div class="about-inner">
+            <h2>Ren ventilasjon, friskere luft</h2>
+            <p>Visste du at ventilasjonsanlegget i boligen din bør renses hvert 5-10 år? Over tid samler det seg støv, pollen og forurensning i kanalene som kan gi dårlig inneklima, allergi og redusert energieffektivitet.</p>
+            <p>VentRens Bergen gjør det enkelt for boligeiere i Bergen og omegn å finne riktig firma til jobben. Vi kobler deg med lokale eksperter som kjenner forholdene i regionen.</p>
+        </div>
+    </section>
+
+    <!-- FORM -->
+    <section class="form-section" id="skjema">
+        <div class="form-wrapper">
+            <div class="section-header">
+                <h2>Få dine gratis tilbud</h2>
+                <p>Fyll ut skjemaet nedenfor, og motta tilbud innen 24 timer.</p>
+            </div>
+            <div class="typeform-container">
+                <!-- Replace FORM_ID with your actual Typeform ID -->
+                <div class="typeform-fallback">
+                    <p>Skjemaet lastes inn...</p>
+                    <a href="https://form.typeform.com/to/FORM_ID" class="btn-primary" target="_blank" rel="noopener">Gå til skjema</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="section-header">
+            <h2>Ofte stilte spørsmål</h2>
+        </div>
+        <div class="faq-list">
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    Hva koster det å bruke VentRens Bergen?
+                    <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">Ingenting! Tjenesten er helt gratis for deg som boligeier. Vi tjener penger ved at firmaene betaler for å motta forespørsler.</div>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    Hvor mange tilbud får jeg?
+                    <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">Du mottar opptil 3 tilbud fra forskjellige firmaer, slik at du kan sammenligne pris og tjenester.</div>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    Hvor lang tid tar det å få svar?
+                    <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">De fleste mottar tilbud innen 24 timer etter at forespørselen er sendt inn.</div>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    Er jeg forpliktet til å takke ja til et tilbud?
+                    <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">Nei, det er helt uforpliktende. Du bestemmer selv om du ønsker å gå videre med noen av tilbudene.</div>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    Hvilke områder dekker dere?
+                    <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">Vi dekker Bergen og omegn, inkludert bydeler som Åsane, Fyllingsdalen, Fana, Ytrebygda, Laksevåg og Arna.</div>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    Hvor ofte bør ventilasjon renses?
+                    <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">Fagfolk anbefaler rens av ventilasjonsanlegget hvert 5-10 år, avhengig av boligtype og bruk. Har du allergi eller merker dårlig luft, bør du vurdere det oftere.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section class="cta-banner">
+        <div class="cta-banner-inner">
+            <h2>Klar for friskere luft?</h2>
+            <p>Det tar under 2 minutter. Sammenlign tilbud fra Bergen sine beste ventilasjonsrens-firmaer.</p>
+            <a href="#skjema" class="btn-primary">Få gratis tilbud nå</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-logo">Vent<span>Rens</span> Bergen</div>
+            <div class="footer-links">
+                <a href="personvern.html">Personvern</a>
+                <a href="vilkar.html">Vilkår</a>
+                <a href="kontakt.html">Kontakt</a>
+            </div>
+            <div class="footer-copy">&copy; 2026 VentRens Bergen. Alle rettigheter reservert.</div>
+        </div>
+    </footer>
+
+    <!-- FAQ Toggle Script -->
+    <script>
+        document.querySelectorAll('.faq-question').forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                var item = this.parentElement;
+                var answer = item.querySelector('.faq-answer');
+                var isOpen = item.classList.contains('open');
+
+                // Close all
+                document.querySelectorAll('.faq-item').forEach(function(el) {
+                    el.classList.remove('open');
+                    el.querySelector('.faq-answer').style.maxHeight = null;
+                    el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+                });
+
+                // Open clicked if it was closed
+                if (!isOpen) {
+                    item.classList.add('open');
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                    this.setAttribute('aria-expanded', 'true');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
