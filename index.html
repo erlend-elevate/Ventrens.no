@@ -263,6 +263,17 @@
             .why-card, .step, .quality-item, .process-step, .faq-item { opacity:0; transform:translateY(16px); transition:opacity .5s ease, transform .5s ease; }
             .why-card.visible, .step.visible, .quality-item.visible, .process-step.visible, .faq-item.visible { opacity:1; transform:translateY(0); }
         }
+        /* EXIT INTENT */
+        .exit-overlay { display:none; position:fixed; inset:0; background:rgba(28,49,68,.6); z-index:300; align-items:center; justify-content:center; padding:1.5rem; }
+        .exit-overlay.visible { display:flex; }
+        .exit-modal { background:var(--white); border-radius:8px; max-width:480px; width:100%; padding:2.5rem; text-align:center; position:relative; box-shadow:0 8px 32px rgba(0,0,0,.15); }
+        .exit-modal-close { position:absolute; top:1rem; right:1rem; background:none; border:none; cursor:pointer; padding:.25rem; color:var(--text-secondary); }
+        .exit-modal-close:hover { color:var(--text); }
+        .exit-modal-close svg { width:20px; height:20px; stroke:currentColor; fill:none; stroke-width:2; }
+        .exit-modal h2 { font-size:1.4rem; color:var(--primary); margin-bottom:.75rem; }
+        .exit-modal p { font-size:.95rem; color:var(--text-secondary); line-height:1.7; margin-bottom:1.5rem; }
+        .exit-modal .btn-primary { width:100%; display:block; text-align:center; }
+        .exit-modal-sub { font-size:.8rem; color:var(--text-secondary); margin-top:.75rem; }
     </style>
 </head>
 <body>
@@ -278,6 +289,19 @@
                 <button class="cookie-btn cookie-btn-decline" id="cookieDecline">Avvis</button>
                 <button class="cookie-btn cookie-btn-accept" id="cookieAccept">Godta</button>
             </div>
+        </div>
+    </div>
+
+    <!-- EXIT INTENT POPUP -->
+    <div class="exit-overlay" id="exitOverlay">
+        <div class="exit-modal">
+            <button class="exit-modal-close" id="exitClose" aria-label="Lukk">
+                <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+            <h2>Før du går</h2>
+            <p>Sammenlign 3 uforpliktende tilbud på ventilasjonsrens fra kvalitetssjekkede firmaer i Bergen. Det tar 60 sekunder.</p>
+            <a href="#skjema" class="btn-primary" id="exitCta">Sammenlign tilbud nå</a>
+            <p class="exit-modal-sub">Helt gratis. Ingen forpliktelser.</p>
         </div>
     </div>
 
@@ -629,6 +653,32 @@
 
     <!-- Typeform embed -->
     <script src="https://embed.typeform.com/next/embed.js"></script>
+
+    <!-- Exit intent -->
+    <script>
+    (function(){
+        var shown=false;
+        function showExit(){
+            if(shown)return;
+            if(sessionStorage.getItem('exit-shown'))return;
+            shown=true;
+            sessionStorage.setItem('exit-shown','1');
+            document.getElementById('exitOverlay').classList.add('visible');
+        }
+        document.addEventListener('mouseout',function(e){
+            if(!e.relatedTarget&&e.clientY<5)showExit();
+        });
+        document.getElementById('exitClose').addEventListener('click',function(){
+            document.getElementById('exitOverlay').classList.remove('visible');
+        });
+        document.getElementById('exitOverlay').addEventListener('click',function(e){
+            if(e.target===this)this.classList.remove('visible');
+        });
+        document.getElementById('exitCta').addEventListener('click',function(){
+            document.getElementById('exitOverlay').classList.remove('visible');
+        });
+    })();
+    </script>
 
 </body>
 </html>
