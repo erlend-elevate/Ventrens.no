@@ -245,6 +245,19 @@
             .step:last-child { grid-column: 1 / -1; max-width:400px; margin:0 auto; }
         }
 
+        /* PRICE TABLE */
+        .price-table { max-width:720px; margin:0 auto; border:1px solid var(--border); border-radius:8px; overflow:hidden; }
+        .price-row { display:grid; grid-template-columns:1fr 1fr 1fr; padding:1rem 1.5rem; border-bottom:1px solid var(--border); font-size:.95rem; color:var(--text-secondary); line-height:1.6; align-items:center; }
+        .price-row:last-child { border-bottom:none; }
+        .price-header { background:var(--primary); color:var(--white); font-weight:600; font-size:.85rem; text-transform:uppercase; letter-spacing:.03em; }
+        .price-row strong { color:var(--text); }
+        .price-detail { font-size:.8rem; opacity:.7; }
+        .price-amount { font-family:'DM Mono',monospace; font-weight:500; color:var(--accent); }
+        @media(max-width:600px) {
+            .price-row { grid-template-columns:1fr 1fr; gap:.25rem; padding:1rem; }
+            .price-row div:nth-child(3) { display:none; }
+        }
+
         /* ENTRANCE ANIMATIONS */
         @media(prefers-reduced-motion:no-preference) {
             .why-card, .step, .quality-item, .process-step, .faq-item { opacity:0; transform:translateY(16px); transition:opacity .5s ease, transform .5s ease; }
@@ -398,6 +411,45 @@
         </div>
     </section>
 
+    <!-- PRISGUIDE -->
+    <section class="sp" style="background:var(--bg-section)">
+        <div class="mw">
+            <div class="section-header">
+                <h2>Hva koster ventilasjonsrens i Bergen?</h2>
+                <p>Prisene varierer basert på boligtype, anleggstype og tilstand. Her er en oversikt basert på typiske markedspriser.</p>
+            </div>
+            <div class="price-table">
+                <div class="price-row price-header">
+                    <div>Boligtype</div>
+                    <div>Typisk pris (inkl. mva)</div>
+                    <div>Varighet</div>
+                </div>
+                <div class="price-row">
+                    <div><strong>Leilighet</strong><br><span class="price-detail">Avtrekksventilasjon</span></div>
+                    <div class="price-amount">2.500 – 3.500 kr</div>
+                    <div>1–2 timer</div>
+                </div>
+                <div class="price-row">
+                    <div><strong>Enebolig</strong><br><span class="price-detail">Balansert ventilasjon</span></div>
+                    <div class="price-amount">3.500 – 5.900 kr</div>
+                    <div>2–4 timer</div>
+                </div>
+                <div class="price-row">
+                    <div><strong>Rekkehus</strong><br><span class="price-detail">Balansert ventilasjon</span></div>
+                    <div class="price-amount">3.000 – 5.000 kr</div>
+                    <div>2–3 timer</div>
+                </div>
+                <div class="price-row">
+                    <div><strong>Borettslag</strong><br><span class="price-detail">Per enhet, ved samlet bestilling</span></div>
+                    <div class="price-amount">1.500 – 3.000 kr</div>
+                    <div>30–60 min/enhet</div>
+                </div>
+            </div>
+            <p class="source" style="text-align:center;margin-top:1.5rem;">Prisene er veiledende og basert på markedspriser i Bergen-området, 2025/2026. Be om tilbud for nøyaktig pris.</p>
+            <div class="fact-box" style="margin-top:1.5rem;">Borettslag får ofte bedre enhetspris ved samlet bestilling for hele bygget. Ved 30+ enheter kan besparelsen være 30–50% sammenlignet med enkeltbestillinger.</div>
+        </div>
+    </section>
+
     <!-- 6. FOR BORETTSLAG OG SAMEIER -->
     <section id="borettslag" class="sp" style="background:var(--bg-section)">
         <div class="mw">
@@ -540,6 +592,7 @@
         <div class="cta-banner-inner mw">
             <h2>Klar for friskere luft?</h2>
             <p>Sammenlign tilbud fra kvalitetssjekkede ventilasjonsrens-firmaer i Bergen.</p>
+            <p style="font-size:.85rem;color:rgba(255,255,255,.55);margin-bottom:2rem;margin-top:-.5rem;">Bergen sentrum, Åsane, Fyllingsdalen, Fana, Ytrebygda, Laksevåg, Arna og omegn</p>
             <a href="#skjema" class="btn-primary">Sammenlign tilbud fra lokale fagfolk</a>
         </div>
     </section>
