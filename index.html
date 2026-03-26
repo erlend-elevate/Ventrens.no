@@ -131,6 +131,12 @@
         .btn-primary { display:inline-block; background:var(--accent); color:var(--white); padding:.9rem 2.2rem; border-radius:6px; font-size:1rem; font-weight:600; text-decoration:none; transition:background .2s; }
         .btn-primary:hover { background:var(--accent-hover); color:var(--white); }
         .hero-sub-cta { margin-top:.75rem; font-size:.8rem; color:var(--text-secondary); }
+        .hero-quick-start { margin-top:2rem; }
+        .hero-quick-label { font-size:.9rem; color:var(--text-secondary); margin-bottom:.75rem; font-weight:500; }
+        .hero-quick-options { display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; }
+        .hero-quick-btn { display:inline-flex; align-items:center; gap:.6rem; padding:.85rem 1.8rem; background:var(--white); border:2px solid var(--border); border-radius:8px; color:var(--primary); font-size:.95rem; font-weight:600; text-decoration:none; transition:border-color .2s, background .2s, color .2s; }
+        .hero-quick-btn:hover { border-color:var(--accent); background:var(--accent-subtle); color:var(--accent); }
+        .hero-quick-btn svg { flex-shrink:0; }
 
         /* SECTIONS */
         .section-header { text-align:center; margin-bottom:3rem; }
@@ -345,8 +351,19 @@
                 <span><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.3 4L6 11.3 2.7 8" stroke="#2D7A50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Kun godkjente firmaer</span>
                 <span><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.3 4L6 11.3 2.7 8" stroke="#2D7A50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Svar innen 24 timer</span>
             </div>
-            <a href="#skjema" class="btn-primary">Sammenlign 3 tilbud – tar 60 sekunder</a>
-            <p class="hero-sub-cta">For privatbolig og borettslag</p>
+            <div class="hero-quick-start">
+                <p class="hero-quick-label">Jeg trenger tilbud for:</p>
+                <div class="hero-quick-options">
+                    <a href="#skjema" class="hero-quick-btn">
+                        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                        Privatbolig
+                    </a>
+                    <a href="#skjema" class="hero-quick-btn">
+                        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="6" width="22" height="16" rx="2"/><path d="M1 10h22"/><path d="M7 6V2"/><path d="M17 6V2"/><path d="M7 14h4"/><path d="M7 18h2"/></svg>
+                        Borettslag / sameie
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -496,6 +513,45 @@
             <div class="section-header">
                 <h2>Hva koster ventilasjonsrens i Bergen?</h2>
                 <p>Prisene varierer basert på boligtype, anleggstype og tilstand. Her er en oversikt basert på typiske markedspriser.</p>
+            </div>
+            <div class="calc-card">
+                <h3>Beregn estimert pris</h3>
+                <div class="calc-fields">
+                    <div class="calc-field">
+                        <label for="calcType">Boligtype</label>
+                        <select id="calcType">
+                            <option value="">Velg boligtype</option>
+                            <option value="leilighet">Leilighet</option>
+                            <option value="rekkehus">Rekkehus</option>
+                            <option value="enebolig">Enebolig</option>
+                            <option value="borettslag">Borettslag</option>
+                        </select>
+                    </div>
+                    <div class="calc-field" id="calcSizeField">
+                        <label for="calcSize">Størrelse</label>
+                        <select id="calcSize">
+                            <option value="">Velg størrelse</option>
+                            <option value="small">Under 100 m²</option>
+                            <option value="medium">100–200 m²</option>
+                            <option value="large">Over 200 m²</option>
+                        </select>
+                    </div>
+                    <div class="calc-field" id="calcUnitsField" style="display:none">
+                        <label for="calcUnits">Antall enheter</label>
+                        <select id="calcUnits">
+                            <option value="">Velg antall</option>
+                            <option value="small">Under 20</option>
+                            <option value="medium">20–50</option>
+                            <option value="large">50–100</option>
+                            <option value="xlarge">Over 100</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="calc-result" id="calcResult" style="display:none">
+                    <div class="calc-result-price" id="calcPrice"></div>
+                    <div class="calc-result-label" id="calcLabel"></div>
+                    <a href="#skjema" class="btn-primary" style="margin-top:1rem;">Få nøyaktig pris — gratis tilbud</a>
+                </div>
             </div>
             <div class="price-table">
                 <div class="price-row price-header">
