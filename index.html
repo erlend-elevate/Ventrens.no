@@ -701,6 +701,40 @@
         </div>
     </section>
 
+    <!-- COMPARISON: Ring selv vs. VentRens Bergen -->
+    <section class="sp" style="background:var(--bg-section)">
+        <div class="mw">
+            <div class="section-header">
+                <h2>Hvorfor ikke bare ringe selv?</h2>
+                <p>Du kan selvfølgelig kontakte firmaer direkte. Men her er forskjellen.</p>
+            </div>
+            <div class="compare-grid">
+                <div class="compare-col compare-old">
+                    <div class="compare-header">Ringe selv</div>
+                    <ul class="compare-list">
+                        <li><svg viewBox="0 0 16 16" width="14" height="14"><line x1="4" y1="4" x2="12" y2="12" stroke="#B44D3E" stroke-width="2" stroke-linecap="round"/><line x1="12" y1="4" x2="4" y2="12" stroke="#B44D3E" stroke-width="2" stroke-linecap="round"/></svg> Søke opp og finne seriøse firmaer</li>
+                        <li><svg viewBox="0 0 16 16" width="14" height="14"><line x1="4" y1="4" x2="12" y2="12" stroke="#B44D3E" stroke-width="2" stroke-linecap="round"/><line x1="12" y1="4" x2="4" y2="12" stroke="#B44D3E" stroke-width="2" stroke-linecap="round"/></svg> Ringe 4–6 firmaer, forklare behovet hver gang</li>
+                        <li><svg viewBox="0 0 16 16" width="14" height="14"><line x1="4" y1="4" x2="12" y2="12" stroke="#B44D3E" stroke-width="2" stroke-linecap="round"/><line x1="12" y1="4" x2="4" y2="12" stroke="#B44D3E" stroke-width="2" stroke-linecap="round"/></svg> Vente på at noen svarer og sender tilbud</li>
+                        <li><svg viewBox="0 0 16 16" width="14" height="14"><line x1="4" y1="4" x2="12" y2="12" stroke="#B44D3E" stroke-width="2" stroke-linecap="round"/><line x1="12" y1="4" x2="4" y2="12" stroke="#B44D3E" stroke-width="2" stroke-linecap="round"/></svg> Sammenligne tilbud manuelt</li>
+                        <li><svg viewBox="0 0 16 16" width="14" height="14"><line x1="4" y1="4" x2="12" y2="12" stroke="#B44D3E" stroke-width="2" stroke-linecap="round"/><line x1="12" y1="4" x2="4" y2="12" stroke="#B44D3E" stroke-width="2" stroke-linecap="round"/></svg> Ingen garanti for kvalitetssjekkede aktører</li>
+                    </ul>
+                    <div class="compare-time">Tidsbruk: 1–2 timer</div>
+                </div>
+                <div class="compare-col compare-new">
+                    <div class="compare-header">VentRens Bergen</div>
+                    <ul class="compare-list">
+                        <li><svg viewBox="0 0 16 16" width="14" height="14"><path d="M13.3 4L6 11.3 2.7 8" stroke="#2D7A50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg> Fyll ut ett skjema – 60 sekunder</li>
+                        <li><svg viewBox="0 0 16 16" width="14" height="14"><path d="M13.3 4L6 11.3 2.7 8" stroke="#2D7A50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg> Opptil 3 tilbud levert til deg</li>
+                        <li><svg viewBox="0 0 16 16" width="14" height="14"><path d="M13.3 4L6 11.3 2.7 8" stroke="#2D7A50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg> Kun kvalitetssjekkede firmaer</li>
+                        <li><svg viewBox="0 0 16 16" width="14" height="14"><path d="M13.3 4L6 11.3 2.7 8" stroke="#2D7A50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg> Sammenlign pris og vilkår enkelt</li>
+                        <li><svg viewBox="0 0 16 16" width="14" height="14"><path d="M13.3 4L6 11.3 2.7 8" stroke="#2D7A50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg> Helt gratis og uforpliktende</li>
+                    </ul>
+                    <div class="compare-time">Tidsbruk: 60 sekunder</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- 8. HVORDAN VI VELGER SAMARBEIDSPARTNERE -->
     <section class="sp" style="background:var(--bg-section)">
         <div class="mw">
@@ -939,6 +973,24 @@
             cta.classList.remove('visible');
             closed=true;
         });
+    })();
+    </script>
+
+    <script>
+    // Postnummer check
+    (function(){
+        var bergen={'5003':'Bergen sentrum','5004':'Bergen sentrum','5005':'Bergen sentrum','5006':'Bergen sentrum','5007':'Bergen sentrum','5008':'Bergen sentrum','5009':'Bergen sentrum','5010':'Bergen sentrum','5011':'Bergen sentrum','5012':'Bergen sentrum','5013':'Bergen sentrum','5014':'Bergen sentrum','5015':'Bergen sentrum','5016':'Bergen sentrum','5017':'Bergen sentrum','5018':'Bergen sentrum','5019':'Bergen sentrum','5020':'Bergen sentrum','5021':'Bergen sentrum','5031':'Laksevåg','5032':'Laksevåg','5033':'Laksevåg','5034':'Laksevåg','5035':'Laksevåg','5036':'Laksevåg','5041':'Fyllingsdalen','5042':'Fyllingsdalen','5043':'Fyllingsdalen','5045':'Fyllingsdalen','5052':'Bergen sentrum','5053':'Bergen sentrum','5054':'Bergen sentrum','5055':'Bergen sentrum','5057':'Bergen sentrum','5058':'Bergen sentrum','5059':'Bergen sentrum','5063':'Bergen sentrum','5067':'Bergen sentrum','5068':'Bergen sentrum','5071':'Loddefjord','5072':'Loddefjord','5073':'Loddefjord','5075':'Loddefjord','5081':'Bergen sentrum','5089':'Bergen sentrum','5096':'Bergen sentrum','5097':'Bergen sentrum','5098':'Bergen sentrum','5099':'Bergen sentrum','5105':'Eidsvåg','5106':'Øvre Ervik','5107':'Salhus','5108':'Hordvik','5109':'Hylkje','5111':'Breistein','5113':'Tertnes','5114':'Tertnes','5115':'Ulset','5116':'Ulset','5117':'Ulset','5118':'Ulset','5119':'Ulset','5131':'Nyborg','5132':'Nyborg','5134':'Flaktveit','5135':'Flaktveit','5136':'Mjølkeråen','5137':'Mjølkeråen','5141':'Fyllingsdalen','5142':'Fyllingsdalen','5143':'Fyllingsdalen','5144':'Fyllingsdalen','5145':'Fyllingsdalen','5146':'Fyllingsdalen','5147':'Fyllingsdalen','5148':'Fyllingsdalen','5151':'Straumsgrend','5152':'Bønes','5153':'Bønes','5154':'Bønes','5155':'Bønes','5160':'Laksevåg','5161':'Laksevåg','5162':'Laksevåg','5163':'Laksevåg','5164':'Laksevåg','5165':'Laksevåg','5170':'Loddefjord','5171':'Loddefjord','5172':'Loddefjord','5173':'Loddefjord','5174':'Mathopen','5176':'Loddefjord','5177':'Bjørøyhamn','5178':'Loddefjord','5179':'Godvik','5183':'Olsvik','5184':'Olsvik','5200':'Os','5201':'Os','5202':'Os','5203':'Os','5206':'Os','5207':'Søfteland','5208':'Os','5209':'Os','5210':'Os','5211':'Os','5212':'Søfteland','5213':'Lepsøy','5214':'Lysekloster','5215':'Lysekloster','5216':'Lepsøy','5217':'Hagavik','5218':'Nordstrøno','5219':'Søfteland','5221':'Nesttun','5222':'Nesttun','5223':'Nesttun','5224':'Nesttun','5225':'Nesttun','5226':'Nesttun','5227':'Nesttun','5228':'Nesttun','5229':'Kalandseidet','5230':'Paradis','5231':'Paradis','5232':'Paradis','5235':'Rådal','5236':'Rådal','5237':'Rådal','5238':'Rådal','5239':'Rådal','5243':'Fana','5244':'Fana','5245':'Fana','5251':'Søreidgrend','5252':'Søreidgrend','5253':'Sandsli','5254':'Sandsli','5257':'Kokstad','5258':'Blomsterdalen','5259':'Hjellestad','5260':'Indre Arna','5261':'Indre Arna','5262':'Arnatveit','5263':'Trengereid','5264':'Garnes','5265':'Ytre Arna','5267':'Indre Arna','5268':'Haukeland','5281':'Valestrandsfossen','5282':'Lonevåg','5283':'Fotlandsvåg','5284':'Tyssebotnen','5285':'Bruvik','5286':'Haus','5291':'Valestrandsfossen','5293':'Lonevåg','5294':'Secondi','5295':'Bruvik','5299':'Haus','5300':'Kleppestø','5301':'Kleppestø','5302':'Strusshamn','5303':'Follese','5304':'Hetlevik','5305':'Florvåg','5306':'Erdal','5307':'Ask','5308':'Kleppestø','5309':'Kleppestø','5310':'Hauglandshella','5311':'Kjerrgarden','5312':'Erdal','5314':'Kjerrgarden','5315':'Herdla','5318':'Strusshamn','5319':'Kleppestø','5321':'Kleppestø','5322':'Kleppestø','5323':'Kleppestø','5325':'Follese','5326':'Ask','5327':'Hauglandshella','5329':'Florvåg','5353':'Straume','5354':'Straume','5355':'Knarrevik','5357':'Fjell','5358':'Fjell','5359':'Øygarden','5360':'Kolltveit','5363':'Ågotnes','5365':'Turøy','5366':'Misje','5371':'Skogsvåg','5373':'Lønningdal','5378':'Klokkarvik','5379':'Steinsland','5380':'Tælavåg','5381':'Glesvær','5382':'Skogsvåg','5384':'Torangsvåg','5385':'Bakkasund','5387':'Møvik','5388':'Litlasund','5392':'Storebø','5393':'Storebø','5394':'Kolbeinsvik','5396':'Vestre Vinnesvåg','5397':'Bekkjarvik','5398':'Stolmen'};
+        var inp=document.getElementById('zipInput');
+        var btn=document.getElementById('zipBtn');
+        var res=document.getElementById('zipResult');
+        function check(){
+            var z=inp.value.trim();
+            if(z.length!==4||!/^\d{4}$/.test(z)){res.className='zip-result info';res.textContent='Skriv inn et gyldig 4-sifret postnummer';return;}
+            if(bergen[z]){res.className='zip-result success';res.textContent='Vi dekker '+z+' '+bergen[z]+'!';}
+            else{res.className='zip-result info';res.textContent='Vi utvider stadig. Fyll ut skjemaet, så sjekker vi om vi har firmaer i ditt område.';}
+        }
+        btn.addEventListener('click',check);
+        inp.addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();check();}});
     })();
     </script>
 
