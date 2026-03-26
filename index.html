@@ -149,6 +149,23 @@
         .why-card p { font-size:.95rem; color:var(--text-secondary); line-height:1.7; margin-bottom:.75rem; }
         .source { font-family:'DM Mono',monospace; font-size:.75rem; color:var(--text-secondary); opacity:.7; }
         .fact-box { background:var(--accent-subtle); border-left:3px solid var(--accent); border-radius:0 8px 8px 0; padding:1.5rem 2rem; margin-top:2rem; font-size:.95rem; color:var(--text-secondary); line-height:1.75; }
+        .check-guide { background:var(--white); border:1px solid var(--border); border-radius:8px; padding:2rem; margin-top:2rem; }
+        .check-guide-header { text-align:center; margin-bottom:1.5rem; }
+        .check-guide-header h3 { font-size:1.15rem; color:var(--primary); margin-bottom:.4rem; }
+        .check-guide-header p { font-size:.9rem; color:var(--text-secondary); }
+        .check-steps { display:flex; gap:1.5rem; margin-bottom:1.5rem; }
+        .check-step { flex:1; display:flex; gap:.75rem; }
+        .check-step-num { flex-shrink:0; width:28px; height:28px; background:var(--accent-subtle); color:var(--accent); border-radius:50%; display:flex; align-items:center; justify-content:center; font-family:'DM Mono',monospace; font-size:.8rem; font-weight:500; }
+        .check-step-content strong { font-size:.9rem; color:var(--primary); display:block; margin-bottom:.2rem; }
+        .check-step-content p { font-size:.85rem; color:var(--text-secondary); line-height:1.6; }
+        .check-result-box { border-top:1px solid var(--border); padding-top:1.25rem; display:flex; gap:1.5rem; }
+        .check-result-item { flex:1; display:flex; gap:.6rem; font-size:.85rem; color:var(--text-secondary); line-height:1.6; }
+        .check-result-item svg { flex-shrink:0; margin-top:.1rem; }
+        .check-result-item strong { color:var(--text); display:block; }
+        @media(max-width:700px) {
+            .check-steps { flex-direction:column; gap:1rem; }
+            .check-result-box { flex-direction:column; gap:1rem; }
+        }
 
         /* PROCESS */
         .process-step { display:flex; gap:1.5rem; padding-bottom:2rem; margin-bottom:2rem; border-bottom:1px solid var(--border); }
@@ -391,7 +408,45 @@
                     <span class="source">Kilde: TEK17 / Arbeidsmiljøloven</span>
                 </div>
             </div>
-            <div class="fact-box">Visste du at de fleste norske boliger aldri har fått renset ventilasjonsanlegget? Sjekk selv: Skru av en ventil på badet eller kjøkkenet. Ser du støv eller fettbelegg, er det sannsynligvis tid for en rens.</div>
+            <div class="check-guide">
+                <div class="check-guide-header">
+                    <h3>Sjekk selv: Trenger du ventilasjonsrens?</h3>
+                    <p>En enkel test du kan gjøre hjemme på 30 sekunder.</p>
+                </div>
+                <div class="check-steps">
+                    <div class="check-step">
+                        <div class="check-step-num">1</div>
+                        <div class="check-step-content">
+                            <strong>Finn en ventil</strong>
+                            <p>Gå til badet eller kjøkkenet. Se etter en rund eller firkantet ventil i taket eller veggen.</p>
+                        </div>
+                    </div>
+                    <div class="check-step">
+                        <div class="check-step-num">2</div>
+                        <div class="check-step-content">
+                            <strong>Skru av eller løft ut ventilen</strong>
+                            <p>De fleste ventiler kan vris av eller løftes forsiktig ut. Hold et stykke hvitt papir bak.</p>
+                        </div>
+                    </div>
+                    <div class="check-step">
+                        <div class="check-step-num">3</div>
+                        <div class="check-step-content">
+                            <strong>Se etter støv og fettbelegg</strong>
+                            <p>Ser du grått støv, mørkt belegg eller kjenner dårlig lukt? Da er det sannsynligvis tid for en rens.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="check-result-box">
+                    <div class="check-result-item check-result-ok">
+                        <svg viewBox="0 0 24 24" width="20" height="20"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" stroke="#2D7A50" fill="none" stroke-width="2" stroke-linecap="round"/><polyline points="22 4 12 14.01 9 11.01" stroke="#2D7A50" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <div><strong>Rent og fint?</strong> Bra! Sjekk igjen om 1–2 år.</div>
+                    </div>
+                    <div class="check-result-item check-result-warn">
+                        <svg viewBox="0 0 24 24" width="20" height="20"><circle cx="12" cy="12" r="10" stroke="#B44D3E" fill="none" stroke-width="2"/><line x1="12" y1="8" x2="12" y2="12" stroke="#B44D3E" stroke-width="2" stroke-linecap="round"/><line x1="12" y1="16" x2="12.01" y2="16" stroke="#B44D3E" stroke-width="2" stroke-linecap="round"/></svg>
+                        <div><strong>Støv eller belegg?</strong> <a href="#skjema">Få tilbud på ventilasjonsrens</a> – det tar 60 sekunder.</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
