@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventilasjonsrens for borettslag — Få 3 tilbud gratis</title>
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="description" content="Sammenlign tilbud på ventilasjonsrens for borettslag i Bergen. Få 3 gratis tilbud fra kvalitetssjekkede firmaer — dokumentasjon inkludert.">
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1C3144;
+            --primary-light: #2A4A66;
+            --accent: #2B7A6F;
+            --accent-hover: #236358;
+            --accent-subtle: #E8F4F2;
+            --bg: #FAFAF8;
+            --bg-section: #F3F1EE;
+            --white: #FFFFFF;
+            --text: #1A1A2E;
+            --text-secondary: #5A6270;
+            --border: #DDD8D0;
+            --success: #2D7A50;
+        }
+        *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+        html { scroll-behavior:smooth; }
+        body { font-family:'DM Sans',sans-serif; color:var(--text); background:var(--bg); line-height:1.6; }
+        h1, h2 { font-family:'DM Serif Display',serif; font-weight:400; }
+        h3 { font-family:'DM Sans',sans-serif; font-weight:700; }
+        a { color:var(--accent); text-decoration:none; transition:color .2s; }
+        a:hover { color:var(--accent-hover); }
+
+        /* COOKIE */
+        .cookie-banner { position:fixed; bottom:0; left:0; right:0; background:var(--primary); color:rgba(255,255,255,.9); padding:1rem 1.5rem; z-index:200; display:none; }
+        .cookie-banner.visible { display:block; }
+        .cookie-inner { max-width:1080px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; gap:1.5rem; flex-wrap:wrap; }
+        .cookie-inner p { font-size:.85rem; line-height:1.6; flex:1; min-width:240px; }
+        .cookie-inner a { color:rgba(255,255,255,.8); text-decoration:underline; }
+        .cookie-buttons { display:flex; gap:.75rem; flex-shrink:0; }
+        .cookie-btn { padding:.5rem 1.2rem; border-radius:6px; font-size:.85rem; font-weight:600; font-family:'DM Sans',sans-serif; cursor:pointer; border:none; transition:background .2s; }
+        .cookie-btn-accept { background:var(--accent); color:var(--white); }
+        .cookie-btn-accept:hover { background:var(--accent-hover); }
+        .cookie-btn-decline { background:transparent; color:rgba(255,255,255,.8); border:1px solid rgba(255,255,255,.3); }
+        .cookie-btn-decline:hover { background:rgba(255,255,255,.1); }
+
+        /* NAV */
+        .nav { background:var(--white); border-bottom:1px solid var(--border); padding:1rem 1.5rem; position:sticky; top:0; z-index:100; transition:box-shadow .2s; }
+        .nav.scrolled { box-shadow:0 1px 3px rgba(0,0,0,.06),0 4px 12px rgba(0,0,0,.04); }
+        .nav-inner { max-width:1080px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; gap:1.5rem; }
+        .nav-logo { font-family:'DM Serif Display',serif; font-size:1.35rem; color:var(--primary); text-decoration:none; flex-shrink:0; }
+        .nav-logo span { color:var(--accent); }
+        .nav-links { display:flex; align-items:center; gap:2rem; }
+        .nav-links a { font-size:.9rem; font-weight:500; color:var(--text-secondary); text-decoration:none; transition:color .2s; }
+        .nav-links a:hover { color:var(--primary); }
+        .nav-cta { display:inline-block; background:var(--accent); color:var(--white)!important; padding:.55rem 1.4rem; border-radius:6px; font-size:.9rem; font-weight:600; transition:background .2s; }
+        .nav-cta:hover { background:var(--accent-hover); color:var(--white)!important; }
+
+        /* HERO */
+        .hero { padding:clamp(2.5rem,6vw,4rem) 1.5rem clamp(1.5rem,3vw,2rem); text-align:center; }
+        .hero-inner { max-width:680px; margin:0 auto; }
+        .hero h1 { font-size:clamp(1.8rem,4.5vw,2.6rem); color:var(--primary); line-height:1.2; margin-bottom:1rem; }
+        .hero .subtitle { font-size:1.05rem; color:var(--text-secondary); line-height:1.75; margin-bottom:1.5rem; max-width:580px; margin-left:auto; margin-right:auto; }
+
+        /* KEY FACTS */
+        .key-facts { padding:0 1.5rem clamp(2rem,5vw,3rem); }
+        .key-facts-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; max-width:780px; margin:0 auto; }
+        .key-fact { text-align:center; padding:1.5rem; background:var(--white); border:1px solid var(--border); border-radius:8px; }
+        .key-fact .num { font-family:'DM Mono',monospace; font-size:1.4rem; font-weight:500; color:var(--accent); line-height:1.2; margin-bottom:.4rem; }
+        .key-fact .label { font-size:.85rem; color:var(--text-secondary); line-height:1.5; }
+
+        /* FORM */
+        .form-section { padding:clamp(2rem,5vw,3rem) 1.5rem; background:var(--bg-section); }
+        .form-wrapper { max-width:720px; margin:0 auto; }
+        .form-section .section-header { text-align:center; margin-bottom:1.5rem; }
+        .form-section .section-header h2 { font-size:clamp(1.3rem,3vw,1.6rem); color:var(--primary); margin-bottom:.4rem; }
+        .form-section .section-header p { font-size:.95rem; color:var(--text-secondary); }
+        .typeform-container { background:var(--white); border:1px solid var(--border); border-radius:8px; overflow:hidden; }
+        .typeform-fallback { padding:3rem 2rem; text-align:center; }
+        .typeform-fallback p { color:var(--text-secondary); margin-bottom:1.5rem; }
+        .form-privacy { text-align:center; margin-top:1rem; font-size:.8rem; color:var(--text-secondary); }
+        .form-privacy a { text-decoration:underline; }
+        .btn-primary { display:inline-block; background:var(--accent); color:var(--white); padding:.9rem 2.2rem; border-radius:6px; font-size:1rem; font-weight:600; text-decoration:none; transition:background .2s; }
+        .btn-primary:hover { background:var(--accent-hover); color:var(--white); }
+
+        /* TRUST */
+        .trust-row { display:flex; justify-content:center; gap:2rem; flex-wrap:wrap; padding:clamp(1.5rem,3vw,2rem) 1.5rem; font-size:.9rem; color:var(--text-secondary); }
+        .trust-row span { display:inline-flex; align-items:center; gap:.4rem; }
+
+        /* FAQ */
+        .faq-section { padding:clamp(2rem,5vw,3rem) 1.5rem; }
+        .faq-list { max-width:720px; margin:0 auto; }
+        .faq-item { background:var(--white); border:1px solid var(--border); border-radius:8px; margin-bottom:.75rem; overflow:hidden; }
+        .faq-question { width:100%; display:flex; align-items:center; justify-content:space-between; padding:1.25rem 1.5rem; background:none; border:none; cursor:pointer; font-family:'DM Sans',sans-serif; font-size:1rem; font-weight:600; color:var(--primary); text-align:left; gap:1rem; }
+        .faq-question:hover { background:var(--accent-subtle); }
+        .faq-question svg { flex-shrink:0; width:20px; height:20px; stroke:var(--accent); fill:none; stroke-width:2; transition:transform .2s; }
+        .faq-item.open .faq-question svg { transform:rotate(45deg); }
+        .faq-answer { max-height:0; overflow:hidden; transition:max-height .3s; }
+        .faq-answer-inner { padding:0 1.5rem 1.25rem; font-size:.95rem; color:var(--text-secondary); line-height:1.75; }
+
+        /* FOOTER */
+        .footer { background:var(--primary); color:rgba(255,255,255,.7); padding:2.5rem 1.5rem; font-size:.9rem; }
+        .footer-inner { max-width:1080px; margin:0 auto; }
+        .footer-top { display:flex; flex-wrap:wrap; justify-content:space-between; align-items:flex-start; gap:1.5rem; }
+        .footer-brand { max-width:340px; }
+        .footer-logo { font-family:'DM Serif Display',serif; font-size:1.15rem; color:var(--white); margin-bottom:.5rem; }
+        .footer-logo span { color:var(--accent); }
+        .footer-brand p { font-size:.85rem; line-height:1.6; margin-bottom:.5rem; }
+        .footer-brand a { color:rgba(255,255,255,.7); text-decoration:none; font-size:.85rem; }
+        .footer-brand a:hover { color:var(--white); }
+        .footer-links { display:flex; gap:1.5rem; flex-wrap:wrap; }
+        .footer-links a { color:rgba(255,255,255,.7); text-decoration:none; font-size:.85rem; transition:color .2s; }
+        .footer-links a:hover { color:var(--white); }
+        .footer-copy { text-align:center; margin-top:2rem; padding-top:1.5rem; border-top:1px solid rgba(255,255,255,.1); font-size:.8rem; }
+
+        /* MOBILE CTA */
+        .mobile-cta { display:none; position:fixed; bottom:0; left:0; right:0; background:var(--white); border-top:1px solid var(--border); padding:.75rem 1.5rem; z-index:99; text-align:center; }
+        .mobile-cta .btn-primary { width:100%; display:block; }
+
+        @media(max-width:820px) {
+            .nav-links a:not(.nav-cta) { display:none; }
+            .key-facts-grid { grid-template-columns:1fr; max-width:400px; }
+            .mobile-cta { display:block; }
+            body { padding-bottom:70px; }
+        }
+        @media(max-width:480px) {
+            .trust-row { flex-direction:column; gap:.5rem; align-items:center; }
+            .footer-top { flex-direction:column; align-items:center; text-align:center; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- MOBILE CTA -->
+    <div class="mobile-cta"><a href="#skjema" class="btn-primary">Få 3 gratis tilbud</a></div>
+
+    <!-- COOKIE BANNER -->
+    <div class="cookie-banner" id="cookieBanner">
+        <div class="cookie-inner">
+            <p>Vi bruker informasjonskapsler for analyse og annonsering. <a href="../personvern.html">Les mer</a></p>
+            <div class="cookie-buttons">
+                <button class="cookie-btn cookie-btn-decline" id="cookieDecline">Avvis</button>
+                <button class="cookie-btn cookie-btn-accept" id="cookieAccept">Godta</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAV -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="../index.html" class="nav-logo">Vent<span>Rens</span> Bergen</a>
+            <div class="nav-links">
+                <a href="../index.html#borettslag">For borettslag</a>
+                <a href="../index.html#faq">Vanlige spørsmål</a>
+                <a href="#skjema" class="nav-cta">Få tilbud</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-inner">
+            <h1>Ventilasjonsrens for borettslag i Bergen</h1>
+            <p class="subtitle">Er du styremedlem og trenger tilbud på ventilasjonsrens? Sammenlign 3 tilbud fra kvalitetssjekkede firmaer — gratis og uforpliktende.</p>
+        </div>
+    </section>
+
+    <!-- KEY FACTS -->
+    <section class="key-facts">
+        <div class="key-facts-grid">
+            <div class="key-fact">
+                <div class="num">1.500–2.500 kr</div>
+                <div class="label">Typisk pris per enhet ved samlet oppdrag</div>
+            </div>
+            <div class="key-fact">
+                <div class="num">1–3 uker</div>
+                <div class="label">Typisk tidsramme for gjennomføring</div>
+            </div>
+            <div class="key-fact">
+                <div class="num">Inkludert</div>
+                <div class="label">Dokumentasjon og rapport til styret</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORM -->
+    <section class="form-section" id="skjema">
+        <div class="form-wrapper">
+            <div class="section-header">
+                <h2>Få 3 tilbud til borettslaget</h2>
+                <p>Fyll ut informasjon om borettslaget. Firmaene tar kontakt med tilbud basert på befaring.</p>
+            </div>
+            <div class="typeform-container" data-tf-live="FORM_ID">
+                <div class="typeform-fallback">
+                    <p>Skjemaet lastes inn. Hvis det ikke vises, <a href="https://form.typeform.com/to/FORM_ID" target="_blank" rel="noopener">klikk her for å åpne det direkte</a>.</p>
+                </div>
+            </div>
+            <p class="form-privacy">Dine opplysninger er trygge. Les vår <a href="../personvern.html">personvernerklæring</a>.</p>
+        </div>
+    </section>
+
+    <!-- TRUST -->
+    <div class="trust-row">
+        <span><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.3 4L6 11.3 2.7 8" stroke="#2D7A50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Kvalitetssjekkede firmaer</span>
+        <span><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.3 4L6 11.3 2.7 8" stroke="#2D7A50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Helt gratis tjeneste</span>
+        <span><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.3 4L6 11.3 2.7 8" stroke="#2D7A50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Uforpliktende tilbud</span>
+    </div>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+        <div class="faq-list">
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    Hvordan fungerer tjenesten for borettslag?
+                    <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">Styret fyller ut skjemaet med informasjon om borettslaget, antall enheter og type ventilasjonsanlegg. Inntil 3 firmaer tar deretter kontakt med tilbud, vanligvis basert på en befaring. Dere velger selv om dere vil gå videre med et av tilbudene.</div>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    Får vi dokumentasjon etter rensing?
+                    <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">Ja, seriøse firmaer leverer alltid en rapport etter utført arbeid. Denne dokumenterer hva som er gjort, eventuelle funn og anbefalinger for vedlikehold. Rapporten kan brukes som dokumentasjon i styrets vedlikeholdsplan.</div>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    Må beboerne være hjemme under rensing?
+                    <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">Som regel ja, ettersom firmaet trenger tilgang til ventiler inne i leiligheten. De fleste firmaer er fleksible med tidspunkt og sender ut varsel til beboerne i forkant. Styret og firmaet avtaler en plan som passer for alle.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-logo">Vent<span>Rens</span> Bergen</div>
+                    <p>Vi kobler privatpersoner og borettslag med kvalitetssjekkede ventilasjonsrens-firmaer i Bergen og omegn.</p>
+                    <a href="mailto:kontakt@ventrensberg.no">kontakt@ventrensberg.no</a>
+                </div>
+                <div class="footer-links">
+                    <a href="../personvern.html">Personvern</a>
+                    <a href="../vilkar.html">Vilkår</a>
+                    <a href="../kontakt.html">Kontakt</a>
+                </div>
+            </div>
+            <div class="footer-copy">VentRens Bergen</div>
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll',function(){document.getElementById('nav').classList.toggle('scrolled',window.scrollY>10)});
+        (function(){if(!localStorage.getItem('cookie-consent')){document.getElementById('cookieBanner').classList.add('visible');}document.getElementById('cookieAccept').addEventListener('click',function(){localStorage.setItem('cookie-consent','accepted');document.getElementById('cookieBanner').classList.remove('visible');});document.getElementById('cookieDecline').addEventListener('click',function(){localStorage.setItem('cookie-consent','declined');document.getElementById('cookieBanner').classList.remove('visible');});})();
+        document.querySelectorAll('.faq-question').forEach(function(btn){btn.addEventListener('click',function(){var item=this.parentElement;var answer=item.querySelector('.faq-answer');var isOpen=item.classList.contains('open');document.querySelectorAll('.faq-item').forEach(function(el){el.classList.remove('open');el.querySelector('.faq-answer').style.maxHeight=null;el.querySelector('.faq-question').setAttribute('aria-expanded','false');});if(!isOpen){item.classList.add('open');answer.style.maxHeight=answer.scrollHeight+'px';this.setAttribute('aria-expanded','true');}});});
+    </script>
+    <script src="https://embed.typeform.com/next/embed.js"></script>
+</body>
+</html>
