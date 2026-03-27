@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enova-støtte for ventilasjon: Alt du trenger å vite | VentRens Bergen</title>
+    <meta name="description" content="Kan du få støtte fra Enova for ventilasjon? Komplett guide til støtteordninger for oppgradering av ventilasjonsanlegg.">
+    <link rel="canonical" href="https://ventrensberg.no/stotte-enova-ventilasjon.html">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Enova-støtte for ventilasjon: Alt du trenger å vite",
+        "description": "Kan du få støtte fra Enova for ventilasjon? Komplett guide til støtteordninger for oppgradering av ventilasjonsanlegg.",
+        "author": {"@type": "Organization", "name": "VentRens Bergen"},
+        "datePublished": "2026-03-27",
+        "dateModified": "2026-03-27"
+    }
+    </script>
+    <style>
+        :root {
+            --primary: #1C3144;
+            --primary-light: #2A4A66;
+            --accent: #2B7A6F;
+            --accent-hover: #236358;
+            --accent-subtle: #E8F4F2;
+            --bg: #FAFAF8;
+            --bg-section: #F3F1EE;
+            --white: #FFFFFF;
+            --text: #1A1A2E;
+            --text-secondary: #5A6270;
+            --border: #DDD8D0;
+        }
+
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            color: var(--text);
+            background-color: var(--bg);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        h1, h2 {
+            font-family: 'DM Serif Display', serif;
+            font-weight: 400;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: var(--accent-hover);
+        }
+
+        /* COOKIE */
+        .cookie-banner { position:fixed; bottom:0; left:0; right:0; background:var(--primary); color:rgba(255,255,255,.9); padding:1rem 1.5rem; z-index:200; display:none; }
+        .cookie-banner.visible { display:block; }
+        .cookie-inner { max-width:1080px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; gap:1.5rem; flex-wrap:wrap; }
+        .cookie-inner p { font-size:.85rem; line-height:1.6; flex:1; min-width:240px; }
+        .cookie-inner a { color:rgba(255,255,255,.8); text-decoration:underline; }
+        .cookie-buttons { display:flex; gap:.75rem; flex-shrink:0; }
+        .cookie-btn { padding:.5rem 1.2rem; border-radius:6px; font-size:.85rem; font-weight:600; font-family:'DM Sans',sans-serif; cursor:pointer; border:none; transition:background .2s; }
+        .cookie-btn-accept { background:var(--accent); color:var(--white); }
+        .cookie-btn-accept:hover { background:var(--accent-hover); }
+        .cookie-btn-decline { background:transparent; color:rgba(255,255,255,.8); border:1px solid rgba(255,255,255,.3); }
+        .cookie-btn-decline:hover { background:rgba(255,255,255,.1); }
+
+        /* NAV */
+        .nav {
+            background: var(--white);
+            border-bottom: 1px solid var(--border);
+            padding: 1rem 1.5rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            transition: box-shadow .2s;
+        }
+
+        .nav.scrolled { box-shadow:0 1px 3px rgba(0,0,0,.06),0 4px 12px rgba(0,0,0,.04); }
+
+        .nav-inner {
+            max-width: 1080px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1.5rem;
+        }
+
+        .nav-logo {
+            font-family: 'DM Serif Display', serif;
+            font-size: 1.35rem;
+            color: var(--primary);
+            text-decoration: none;
+            flex-shrink: 0;
+        }
+
+        .nav-logo span {
+            color: var(--accent);
+        }
+
+        .nav-links { display:flex; align-items:center; gap:2rem; }
+        .nav-links a { font-size:.9rem; font-weight:500; color:var(--text-secondary); text-decoration:none; transition:color .2s; }
+        .nav-links a:hover { color:var(--primary); }
+        .nav-cta { display:inline-block; background:var(--accent); color:var(--white)!important; padding:.55rem 1.4rem; border-radius:6px; font-size:.9rem; font-weight:600; transition:background .2s; }
+        .nav-cta:hover { background:var(--accent-hover); color:var(--white)!important; }
+
+        /* CONTENT */
+        .content {
+            flex: 1;
+            max-width: 1080px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem 4rem;
+            width: 100%;
+        }
+
+        .content h1 {
+            font-size: 2.2rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .updated {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-bottom: 2.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .content h2 {
+            font-size: 1.4rem;
+            color: var(--primary);
+            margin-top: 2.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .content p,
+        .content ul,
+        .content ol {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+            line-height: 1.75;
+        }
+
+        .content ul,
+        .content ol {
+            padding-left: 1.5rem;
+        }
+
+        .content ul li,
+        .content ol li {
+            margin-bottom: 0.5rem;
+        }
+
+        .content strong {
+            color: var(--text);
+            font-weight: 600;
+        }
+
+        /* BREADCRUMB */
+        .breadcrumb { font-size:.8rem; color:var(--text-secondary); margin-bottom:1.5rem; }
+        .breadcrumb a { color:var(--accent); }
+        .breadcrumb span { margin:0 .4rem; opacity:.5; }
+
+        /* TABLE */
+        .price-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            font-size: 0.95rem;
+        }
+
+        .price-table th,
+        .price-table td {
+            text-align: left;
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .price-table th {
+            background: var(--bg-section);
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+
+        .price-table td {
+            color: var(--text-secondary);
+        }
+
+        .price-table tbody tr:hover {
+            background: var(--accent-subtle);
+        }
+
+        /* SOURCE */
+        .source {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            font-style: italic;
+            margin-top: 0.5rem;
+            margin-bottom: 1.5rem;
+            opacity: 0.8;
+        }
+
+        /* FACT BOX */
+        .fact-box {
+            background: var(--accent-subtle);
+            border-left: 4px solid var(--accent);
+            border-radius: 0 8px 8px 0;
+            padding: 1.25rem 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .fact-box p {
+            color: var(--text);
+            margin-bottom: 0.5rem;
+        }
+
+        .fact-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .fact-box strong {
+            color: var(--primary);
+        }
+
+        /* FOOTER */
+        .footer {
+            background: var(--primary);
+            color: rgba(255,255,255,0.7);
+            padding: 2.5rem 1.5rem;
+            font-size: 0.9rem;
+        }
+
+        .footer-inner {
+            max-width: 1080px;
+            margin: 0 auto;
+        }
+
+        .footer-top {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 2rem;
+        }
+
+        .footer-brand p {
+            font-size: 0.9rem;
+            line-height: 1.7;
+            margin: 0.75rem 0;
+            max-width: 360px;
+        }
+
+        .footer-brand a {
+            color: rgba(255,255,255,0.7);
+            font-size: 0.9rem;
+            transition: color 0.2s ease;
+        }
+
+        .footer-brand a:hover {
+            color: var(--white);
+        }
+
+        .footer-logo {
+            font-family: 'DM Serif Display', serif;
+            font-size: 1.15rem;
+            color: var(--white);
+        }
+
+        .footer-logo span {
+            color: var(--accent);
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color 0.2s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--white);
+        }
+
+        .footer-copy {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.8rem;
+        }
+
+        @media(max-width:820px) {
+            .nav-links a:not(.nav-cta) { display:none; }
+        }
+
+        @media (max-width: 600px) {
+            .content h1 {
+                font-size: 1.6rem;
+            }
+            .content h2 {
+                font-size: 1.2rem;
+            }
+            .footer-top {
+                flex-direction: column;
+            }
+            .price-table {
+                font-size: 0.8rem;
+            }
+            .price-table th,
+            .price-table td {
+                padding: 0.5rem 0.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- COOKIE BANNER -->
+    <div class="cookie-banner" id="cookieBanner">
+        <div class="cookie-inner">
+            <p>Vi bruker informasjonskapsler for analyse og annonsering. <a href="personvern.html">Les mer</a></p>
+            <div class="cookie-buttons">
+                <button class="cookie-btn cookie-btn-decline" id="cookieDecline">Avvis</button>
+                <button class="cookie-btn cookie-btn-accept" id="cookieAccept">Godta</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAV -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">Vent<span>Rens</span> Bergen</a>
+            <div class="nav-links">
+                <a href="index.html#hvorfor">Om ventilasjonsrens</a>
+                <a href="index.html#borettslag">For borettslag</a>
+                <a href="index.html#faq">Vanlige spørsmål</a>
+                <a href="index.html#skjema" class="nav-cta">Få tilbud</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENT -->
+    <main class="content">
+        <nav class="breadcrumb" aria-label="Brødsmuler">
+            <a href="index.html">Hjem</a> <span>/</span> Enova-støtte for ventilasjon
+        </nav>
+
+        <h1>Enova-støtte for ventilasjon: Alt du trenger å vite</h1>
+        <p class="updated">Sist oppdatert: 27. mars 2026</p>
+
+        <p>Enova er et statsforetak som forvalter støtteordninger for energitiltak i norske boliger. Blant tiltakene som kan kvalifisere for støtte er installasjon av balansert ventilasjon med varmegjenvinning. Denne guiden gir en komplett oversikt over hva du kan få støtte til, hvem som kan søke, og hvordan prosessen fungerer.</p>
+
+        <h2>Hva støtter Enova?</h2>
+        <p>Enova tilbyr økonomisk støtte til installasjon av balansert ventilasjon med varmegjenvinning i eksisterende boliger. Ordningen er en del av Enovas program for energitiltak i boliger og har som mål å redusere energiforbruket og forbedre inneklima i norske hjem.</p>
+
+        <p>Hovedpunktene i støtteordningen for ventilasjon:</p>
+
+        <ul>
+            <li><strong>Støttebeløp:</strong> Inntil 5.000 kroner per bolig for installasjon av balansert ventilasjon med varmegjenvinning.</li>
+            <li><strong>Krav til boligen:</strong> Boligen må ha ferdigstillelsesdato før 2010. Nyere boliger har som regel allerede tilfredsstillende ventilasjon i henhold til teknisk forskrift (TEK).</li>
+            <li><strong>Type anlegg:</strong> Anlegget må være et balansert ventilasjonsanlegg med varmegjenvinning. Enkle avtrekksystemer eller vifter kvalifiserer ikke.</li>
+            <li><strong>Krav til utførelse:</strong> Installasjonen må utføres av kvalifisert fagperson.</li>
+        </ul>
+
+        <p class="source">Kilde: <a href="https://www.enova.no" target="_blank" rel="noopener">enova.no</a> — Støtte til energitiltak i bolig. Støttebeløp og vilkår kan endres. Sjekk alltid oppdaterte vilkår på Enovas nettsider.</p>
+
+        <div class="fact-box">
+            <p><strong>Viktig å vite:</strong> Støttebeløpet på 5.000 kroner dekker bare en liten del av totalkostnaden for et balansert ventilasjonsanlegg, som typisk koster mellom 80.000 og 200.000 kroner inkludert installasjon. Støtten bør derfor ses som et tilskudd, ikke som finansiering av tiltaket.</p>
+        </div>
+
+        <h2>Hvem kan søke?</h2>
+        <p>Følgende grupper kan søke om Enova-støtte for ventilasjon:</p>
+
+        <ul>
+            <li><strong>Private boligeiere:</strong> Eiere av eneboliger, rekkehus, tomannsboliger og leiligheter i selveierbolig.</li>
+            <li><strong>Borettslag og sameier:</strong> Styret kan søke på vegne av borettslaget eller sameiet for fellesanlegg. Støtten beregnes per boenhet.</li>
+            <li><strong>Andelseiere:</strong> Eiere av andeler i borettslag kan søke individuelt dersom tiltaket gjelder egen boenhet og ikke fellesareal.</li>
+        </ul>
+
+        <p>For å kvalifisere må søkeren være registrert som eier av boligen i Kartverkets grunnbok. Leietakere kan ikke søke om støtte.</p>
+
+        <h2>Slik søker du</h2>
+        <p>Søknadsprosessen hos Enova er heldigital og relativt enkel. Følg disse stegene:</p>
+
+        <ol>
+            <li><strong>Sjekk at du kvalifiserer:</strong> Kontroller at boligen er bygget før 2010 og at du planlegger å installere balansert ventilasjon med varmegjenvinning.</li>
+            <li><strong>Innhent tilbud:</strong> Få tilbud fra en eller flere kvalifiserte installatører. Du trenger ikke ha akseptert et tilbud før du søker, men det er nyttig å ha en prisindikasjon.</li>
+            <li><strong>Opprett konto på enova.no:</strong> Logg inn med BankID på <a href="https://www.enova.no" target="_blank" rel="noopener">enova.no</a> og opprett en brukerprofil dersom du ikke allerede har en.</li>
+            <li><strong>Fyll ut søknaden:</strong> Velg «Støtte til energitiltak i bolig» og registrer ventilasjonstiltaket. Du må oppgi informasjon om boligen og det planlagte tiltaket.</li>
+            <li><strong>Gjennomfør tiltaket:</strong> Etter at søknaden er godkjent, har du normalt 18 måneder på å gjennomføre installasjonen.</li>
+            <li><strong>Dokumenter og be om utbetaling:</strong> Last opp faktura og dokumentasjon fra installatøren. Enova utbetaler støtten etter at tiltaket er verifisert.</li>
+        </ol>
+
+        <div class="fact-box">
+            <p><strong>Tips:</strong> Du kan søke om støtte til flere energitiltak i samme søknad. Dersom du for eksempel kombinerer ventilasjon med etterisolering eller utskifting av vinduer, kan du oppnå en høyere total støtte. Se oversikten over andre tiltak lenger ned i artikkelen.</p>
+        </div>
+
+        <h2>Hva dekkes IKKE?</h2>
+        <p>Det er viktig å forstå begrensningene i Enovas støtteordning for ventilasjon. Følgende tiltak kvalifiserer ikke for støtte:</p>
+
+        <ul>
+            <li><strong>Rengjøring av eksisterende anlegg:</strong> Ventilasjonsrens og vedlikehold dekkes ikke. Støtten gjelder kun installasjon av nytt anlegg.</li>
+            <li><strong>Reparasjon av eksisterende anlegg:</strong> Utbedring av feil eller utskifting av enkeltkomponenter som filtre, vifter eller kanaler i et eksisterende anlegg dekkes ikke.</li>
+            <li><strong>Avtrekksventilasjon:</strong> Installasjon av enkel avtrekksventilasjon (uten tilluft og varmegjenvinning) kvalifiserer ikke.</li>
+            <li><strong>Kjøkkenvifte eller baderomsvifte:</strong> Enkeltstående vifter er ikke det samme som et balansert ventilasjonsanlegg og dekkes ikke.</li>
+            <li><strong>Boliger bygget etter 2010:</strong> Disse antas å tilfredsstille gjeldende krav til ventilasjon i byggeforskriften.</li>
+        </ul>
+
+        <p>For boligeiere som primært trenger rengjøring av eksisterende ventilasjon, finnes det dessverre ingen offentlig støtteordning. Likevel er regelmessig rens en av de mest kostnadseffektive tiltakene for å sikre godt inneklima. Se vår <a href="ventilasjonsrens-pris-bergen.html">prisguide for ventilasjonsrens i Bergen</a>.</p>
+
+        <h2>Andre energitiltak Enova støtter</h2>
+        <p>Dersom du vurderer å oppgradere ventilasjonen, kan det være fornuftig å se på helheten i boligens energibruk. Enova tilbyr støtte til en rekke tiltak som ofte gjøres i sammenheng med ventilasjonsoppgradering:</p>
+
+        <table class="price-table">
+            <thead>
+                <tr>
+                    <th>Tiltak</th>
+                    <th>Støttebeløp</th>
+                    <th>Merknad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Balansert ventilasjon med varmegjenvinning</td>
+                    <td>Inntil 5.000 kr</td>
+                    <td>Bolig bygget før 2010</td>
+                </tr>
+                <tr>
+                    <td>Etterisolering av yttervegg</td>
+                    <td>Inntil 20.000 kr</td>
+                    <td>Avhengig av areal</td>
+                </tr>
+                <tr>
+                    <td>Utskifting av vinduer og dører</td>
+                    <td>Inntil 10.000 kr</td>
+                    <td>Til energieffektive modeller</td>
+                </tr>
+                <tr>
+                    <td>Vannbåren varme</td>
+                    <td>Inntil 10.000 kr</td>
+                    <td>Nytt vannbårent system</td>
+                </tr>
+                <tr>
+                    <td>Væske-til-vann varmepumpe</td>
+                    <td>Inntil 10.000 kr</td>
+                    <td>Bergvarme eller jordvarme</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p class="source">Kilde: <a href="https://www.enova.no" target="_blank" rel="noopener">enova.no</a> — Støtte til energitiltak i bolig. Beløpene er veiledende og kan endres. Sjekk alltid gjeldende satser.</p>
+
+        <p>Ved å kombinere flere tiltak i samme søknad kan du oppnå en samlet støtte som gjør den totale investeringen mer overkommelig. En helhetlig oppgradering gir også bedre energieffektivitet enn enkelttiltak alene.</p>
+
+        <h2>Er det verdt å oppgradere ventilasjonen?</h2>
+        <p>Selv om Enova-støtten bare dekker en brøkdel av kostnaden, er det flere gode grunner til å vurdere oppgradering fra avtrekksventilasjon til balansert ventilasjon med varmegjenvinning:</p>
+
+        <ul>
+            <li><strong>Bedre inneklima:</strong> Balansert ventilasjon sikrer jevn tilførsel av frisk, filtrert luft til alle rom. Du slipper å være avhengig av vindusventiler eller vinduslufting.</li>
+            <li><strong>Lavere energikostnader:</strong> Varmegjenvinning kan gjenvinne 60–90 prosent av varmen i avtrekksluften. Over tid kan dette gi betydelige besparelser på oppvarming. Les mer om <a href="ventilasjon-energisparing.html">ventilasjon og energisparing</a>.</li>
+            <li><strong>Redusert støy:</strong> Moderne balanserte anlegg er vesentlig stillere enn eldre avtrekkssystemer og vindusventiler som slipper inn trafikkstøy.</li>
+            <li><strong>Økt boligverdi:</strong> Et godt ventilasjonsanlegg er et pluss ved salg. Kjøpere er i økende grad oppmerksomme på inneklima og energieffektivitet.</li>
+        </ul>
+
+        <p>For å avgjøre hva som lønner seg for din bolig, anbefaler vi å innhente en vurdering fra en kvalifisert ventilasjonsfagperson. De kan vurdere eksisterende anlegg og gi en anbefaling basert på boligens alder, tilstand og behov. Se også vår sammenligning av <a href="balansert-ventilasjon-vs-avtrekk.html">balansert ventilasjon vs. avtrekk</a>.</p>
+
+        <div style="margin-top:3rem;padding-top:2rem;border-top:1px solid var(--border);">
+            <h2 style="font-size:1.2rem;margin-bottom:1rem;">Relaterte artikler</h2>
+            <ul style="list-style:none;padding:0;">
+                <li style="margin-bottom:.6rem;"><a href="ventilasjon-energisparing.html">Ventilasjon og energisparing — slik reduserer du kostnadene</a></li>
+                <li style="margin-bottom:.6rem;"><a href="balansert-ventilasjon-vs-avtrekk.html">Balansert ventilasjon vs. avtrekk — hva er best?</a></li>
+                <li style="margin-bottom:.6rem;"><a href="ventilasjonsrens-pris-bergen.html">Hva koster ventilasjonsrens i Bergen?</a></li>
+                <li style="margin-bottom:.6rem;"><a href="inneklima-helse-ventilasjon.html">Inneklima og helse — slik påvirker ventilasjonen deg</a></li>
+            </ul>
+        </div>
+
+        <div style="background:var(--accent-subtle);border-radius:8px;padding:2rem;text-align:center;margin-top:3rem;">
+            <h2 style="font-size:1.3rem;color:var(--primary);margin-bottom:.5rem;">Vurderer du oppgradering av ventilasjonen?</h2>
+            <p style="color:var(--text-secondary);margin-bottom:1.25rem;">Få uforpliktende tilbud fra kvalitetssjekkede firmaer i Bergen-området.</p>
+            <a href="index.html#skjema" class="btn-cta" style="display:inline-block;background:var(--accent);color:var(--white);padding:.85rem 2rem;border-radius:6px;font-weight:600;text-decoration:none;">Få tilbud nå</a>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-logo">Vent<span>Rens</span> Bergen</div>
+                    <p>Vi kobler privatpersoner og borettslag med kvalitetssjekkede ventilasjonsrens-firmaer i Bergen og omegn.</p>
+                    <a href="mailto:kontakt@ventrensberg.no">kontakt@ventrensberg.no</a>
+                </div>
+                <div class="footer-links">
+                    <a href="personvern.html">Personvern</a>
+                    <a href="vilkar.html">Vilkår</a>
+                    <a href="kontakt.html">Kontakt</a>
+                </div>
+            </div>
+            <div class="footer-copy">VentRens Bergen</div>
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll',function(){document.getElementById('nav').classList.toggle('scrolled',window.scrollY>10)});
+        (function(){if(!localStorage.getItem('cookie-consent')){document.getElementById('cookieBanner').classList.add('visible');}document.getElementById('cookieAccept').addEventListener('click',function(){localStorage.setItem('cookie-consent','accepted');document.getElementById('cookieBanner').classList.remove('visible');});document.getElementById('cookieDecline').addEventListener('click',function(){localStorage.setItem('cookie-consent','declined');document.getElementById('cookieBanner').classList.remove('visible');});})();
+    </script>
+
+</body>
+</html>
